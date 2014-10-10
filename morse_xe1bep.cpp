@@ -447,3 +447,41 @@ tone(_pin, _frecc, _punto);
 delay(_punto);
 }
 
+void morse_xe1bep::coma(){
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _raya);
+delay(_raya);
+}
+
+void morse_xe1bep::qMark(){
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _punto);
+delay(_punto);
+}
+
+void morse_xe1bep::lSpace(){
+delay(_raya);
+}
+
+void morse_xe1bep::wSpace(){
+delay(_punto*5);
+}
+
