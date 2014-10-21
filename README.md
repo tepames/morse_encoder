@@ -1,26 +1,26 @@
-Morse encoder library by XE1BEP
-Hugo Enrique Preciado Farías
+#Morse encoder library by XE1BEP
+##Hugo Enrique Preciado Farías
 
 First of all you have to copy "morse_xe1bep.cpp" and "morse_xe1bep.h" files  in a folder called "morse_xe1bep"
 inside your arduino libraries folder. 
 
 the file morse_temp_hum.ino is an implementation of the library
 
-importing library 
+###importing library 
 
-#include <morse_xe1bep.h>
+'#include <morse_xe1bep.h>'
 
-creating the object
+###creating the object
 
-morse_xe1bep object_name(Audio_PIN,frequency,duration_of_dot_milliseconds); 
+'morse_xe1bep object_name(Audio_PIN,frequency,duration_of_dot_milliseconds);'
 
-example: morse_xe1bep xe1bep(9,1500,100); 
+'example: morse_xe1bep xe1bep(9,1500,100);'
 
-list of functions
+###list of functions
 
-letters, numbers and characters
+####letters, numbers and characters
 
-object_name.numToMorse(int);
+'''object_name.numToMorse(int);
 object_name.a();
 object_name.b();
 object_name.c();
@@ -59,11 +59,11 @@ object_name.nueve();
 object_name.cero();
 object_name.coma();
 object_name.diagonal();
-object_name.qMark();
+object_name.qMark();'''
 
 
-space betweebt the letters of the same word
-object_name.lSpace();
+####Space between the letters of the same word
+'object_name.lSpace();'
 
-space between two different words
-object_name.wSpace();
+####Space between two different words
+'object_name.wSpace();'
