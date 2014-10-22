@@ -4,7 +4,7 @@
 First of all you have to copy "morse_xe1bep.cpp" and "morse_xe1bep.h" files  in a folder called "morse_xe1bep"
 inside your arduino libraries folder. 
 
-the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of the library
+the file morse_temp_hum.ino is an implementation of the library
 
 ###importing library 
 
@@ -18,12 +18,9 @@ the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of
 
 ###list of functions
 
-####Convert a variable to morse
-`object_name.numToMorse(int);`
-`object_name.numToMorseFloat(float);`
-
 ####letters, numbers and characters
 
+`object_name.numToMorse(int);`
 `object_name.a();`
 `object_name.b();`
 `object_name.c();`
