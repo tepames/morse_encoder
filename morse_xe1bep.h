@@ -11,6 +11,7 @@
 		public:
 			morse_xe1bep(int pin, int frecc, int punto);		
 			void numToMorse(int numero);
+			void numToMorseFloat(float numerof);
 			void conversion(int num);
 			void a();
 			void b();
@@ -51,6 +52,7 @@
 			void diagonal();
 			void coma();
 			void qMark();
+			void dot();
 			void lSpace();
 			void wSpace();
 		private:
@@ -59,6 +61,7 @@
 			int _punto;
 			int _raya;
 			int _numero;
+			float _numerof;
 			int _num;
 	};
 

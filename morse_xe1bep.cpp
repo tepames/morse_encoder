@@ -19,10 +19,38 @@ void morse_xe1bep::numToMorse(int numero){
    int dec=numero/10;
    int uni=numero%10;
     conversion(dec);
-    delay(_raya);
+    lSpace();
     conversion(uni);
   }else if(numero < 10){
     conversion(numero);
+  }
+}
+
+void morse_xe1bep::numToMorseFloat(float numerof){
+ _numerof=numerof; 
+ int numero=(int)numerof;
+ int entero=(int)numerof;
+ float decimales=numerof-entero;
+ if(numero >= 10){
+   int dec=numero/10;
+   int uni=numero%10;
+   decimales=decimales/.1;
+   int decimal=(int)decimales;
+    conversion(dec);
+    lSpace();
+    conversion(uni);
+    lSpace();
+    dot();
+    lSpace();
+    conversion(decimal);
+  }else if(numero < 10){
+   decimales=decimales/.1;
+   int decimal=(int)decimales;
+    conversion(numero);
+    lSpace();
+    dot();
+    lSpace();
+    conversion(decimal);
   }
 }
 
@@ -475,6 +503,21 @@ tone(_pin, _frecc, _punto);
 delay(_punto+_punto);
 tone(_pin, _frecc, _punto);
 delay(_punto);
+}
+
+void morse_xe1bep::dot(){
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _raya);
+delay(_punto+_raya);
+tone(_pin, _frecc, _punto);
+delay(_punto+_punto);
+tone(_pin, _frecc, _raya);
+delay(_raya);
 }
 
 void morse_xe1bep::lSpace(){
