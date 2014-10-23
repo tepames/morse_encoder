@@ -4,7 +4,8 @@
 First of all you have to copy "morse_xe1bep.cpp" and "morse_xe1bep.h" files  in a folder called "morse_xe1bep"
 inside your arduino libraries folder. 
 
-the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of the library
+These examples are using a digital "hummidity and temperature sensor" called DHT11 
+the file morse_temp_hum_integer.ino is an example using integer values in the function `object_name.numToMorse(int);` and morse_temp_hum_float.ino is an example using float values in the function `object_name.numToMorseFloat(float);`
 
 ###importing library 
 
@@ -22,7 +23,7 @@ the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of
 `object_name.numToMorse(int);`
 `object_name.numToMorseFloat(float);`
 
-####letters, numbers and characters
+####letters
 
 `object_name.a();`
 `object_name.b();`
@@ -50,6 +51,8 @@ the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of
 `object_name.x();`
 `object_name.y();`
 `object_name.z();`
+
+####Numbers
 `object_name.uno();`
 `object_name.dos();`
 `object_name.tres();`
@@ -60,7 +63,10 @@ the file morse_temp_hum_integer.ino and morse_temp_hum_float.ino are examples of
 `object_name.ocho();`
 `object_name.nueve();`
 `object_name.cero();`
+
+####Characters
 `object_name.coma();`
+`object_name.dot();`
 `object_name.diagonal();`
 `object_name.qMark();`
 
